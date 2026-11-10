@@ -1,7 +1,9 @@
 
-const API_URL = 'http://localhost:5000/api/assistant'
+import API_BASE_URL from '../utils/api'
 
 // Common API request handler
+const API_URL = `${API_BASE_URL}/api/assistant`
+
 const makeRequest = async (url, options = {}) => {
   const token = localStorage.getItem('token')
 

@@ -1,5 +1,7 @@
+import API_BASE_URL from '../utils/api'
 
-const API_URL = 'http://localhost:5000/api/settings'
+
+const API_URL = `${API_BASE_URL}/api/settings`
 
 // Get authentication token
 const getAuthHeaders = () => {

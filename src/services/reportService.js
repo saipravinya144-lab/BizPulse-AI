@@ -1,5 +1,7 @@
+import API_BASE_URL from '../utils/api'
 
-const API_URL = 'http://localhost:5000/api/reports'
+
+const API_URL = `${API_BASE_URL}/api/reports`
 
 export const getBusinessReports = async () => {
   const token = localStorage.getItem('token')
